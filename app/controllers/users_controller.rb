@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    #test2
   end
 
   def show
@@ -14,7 +15,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-#test
+
   def create
     @user = User.new(
         name: params[:name],
